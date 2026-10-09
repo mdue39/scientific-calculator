@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDUDUZI Scientific calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="brand">
+                MDUDUZI 
+                <span>SCIENTIFIC CALC</span>
+
+            </div>
+            <div class="display">
+            
+                <input type="text" id="display" readonly>
+                </div>
+                <div class="scientific-buttons">
+
+                
+
+                <button onclick="calculateFunction('sin')" class="operator">
+                    sin
+
+                </button>
+                <button onclick="calculateFunction('cos')" class="operator">
+                    cos
+                </button>
+                <button onclick="calculateFunction('tan')" class="operator">
+                    tan
+                </button>
+                <button onclick="calculateFunction('log')" class="operator">
+                    log
+                </button>
+                <button onclick="calculateFunction('sqrt')" class="operator">
+                    √
+                </button>
+                <button onclick="calculateFunction('square')" class="operator">
+                    x²
+                </button>
+                <button onclick="calculateFunction('In')" class="operator">
+                    In
+                </button>
+                <button onclick="addToDisplay('Math.PI')" class="operator">
+                    π
+                </button>
+                <button onclick="addToDisplay('(')" class="operator">
+                    (
+                </button>
+                <button onclick="addToDisplay(')')" class="operator">
+                    )
+                </button>
+                <button onclick="addToDisplay('%')" class="operator">
+                    %
+                </button>
+                <button onclick="calculateFunction('factorial')" class="operator">
+                    n!
+                </button>
+
+            </div>
+        
+            <form>
+                <div class="buttons">
+                    
+            
+
+                
+                    <input type="button" value="AC" onclick="clearDisplay()" class="operator"> 
+                    <input type="button" value="DE" onclick="deleteLast()" class="operator"> 
+                    <input type="button" value="." onclick="addToDisplay('.')" class="operator"> 
+                    <input type="button" value="/" onclick="addToDisplay('/')" class="operator" class="operator"> 
+                
+                
+                    <input type="button" value="7" onclick="addToDisplay('7')"> 
+                    <input type="button" value="8" onclick="addToDisplay('8')"> 
+                    <input type="button" value="9" onclick="addToDisplay('9')"> 
+                    <input type="button" value="*" onclick="addToDisplay('*')" class="operator">
+                
+                
+                    <input type="button" value="4" onclick="addToDisplay('4')"> 
+                    <input type="button" value="5" onclick="addToDisplay('5')"> 
+                    <input type="button" value="6" onclick="addToDisplay('6')"> 
+                    <input type="button" value="-" onclick="addToDisplay('-')" class="operator">
+                
+                
+                    <input type="button" value="1" onclick="addToDisplay('1')"> 
+                    <input type="button" value="2" onclick="addToDisplay('2')"> 
+                    <input type="button" value="3" onclick="addToDisplay('3')"> 
+                    <input type="button" value="+" onclick="addToDisplay('+')" class="operator">
+                
+                
+                    <input type="button" value="0" onclick="addToDisplay('0')"> 
+                    <input type="button" value="00" onclick="addToDisplay('00')"> 
+                    <input type="button" value="=" class="equal" onclick="calculate()">
+                </form>
+            
+    </div>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
